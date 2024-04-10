@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link rel="icon" type="images/x-icon" href="media/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#Agenda">Agenda</a></li>
+            <li><a href="#Attendance">Attendance</a></li>
+            <li><a href="Meeting Minutes">Meeting Minutes</a></li>
+            <li><a href="#Action Items">Action Items</a></li>
+            <li><a href="#TLDR">TLDR</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Emergency Meeting for P1 Issue</h1>
+        <hr>
+        <section>
+            <p>Motivation: Production has gone down <em>twice</em> today,
+                for a total outage time of 20/24 hours. This is absolutely a <b>P1</b> issue and should be treated as such.
+                <br>
+                There is <i>no</i> current idea or idea as to what the cause may be, or the resolution.
+                <br>
+                <b>Production is currently UP, but may not be stable.</b>
+                <br>
+                <img src="https://imgs.xkcd.com/comics/server_problem_2x.png" width="400">
+            </p>
+        </section>
+        <section>
+            <h2 id="Agenda">Agenda</h2>
+            <ol>
+                <li><strong>PANIC</strong></li>
+                <li>What we Know so far</li>
+                <li>Quantify Production Impact</li>
+                <li>Alert Customer Support</li>
+                <li>Discuss Backup Options</li>
+                <li>Find Production Issue</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 id="Attendance">Attendance</h2>
+            <h3>Executives</h3>
+            <span>
+            <ul>
+                <li>Garrett</li>
+                <li>Kieran</li>
+                <li>Jose</li>
+            </ul>
+            <h3>Engineering</h3>
+            <ul>
+                <li>Cynthia</li>
+                <li>Bin</li>
+                <li>Derek</li>
+                <li>Chris</li>
+            </ul>
+            <h3>Operations</h3>
+            <ul>
+                <li>Scott</li>
+                <li>David</li>
+            </ul>
+            <h3>Customer Success</h3>
+            <ul>
+                <li>Neal</li>
+                <li>Garrett</li>
+            </ul>
+        </span>
+
+        </section>
+
+
+        <h2 id="Meeting Minutes">Meeting Minutes</h2>
+        <h3>What we Know so far</h3>
+        <p>
+            On TIME:DAY, we had a brief outage in production, and we automatically failed over to our second data center.
+            Production was stable for X hours, but then again had an outage. 
+            The original root cause had not been diagnosed or found, so the original data center remained down.
+            The inability to fail over back to the main data center meant we hadn an outage for X hours.
+            Main data center was rebooted entirely and brought back up, but is considered UNSTABLE currently.
+        </p>
+        <h3>Quantify Production Impact</h3>
+        <p>
+            Both data centers affected, implying likely not a networking issue from the provider end.
+            Current code in main considered to be unstable, unsure how far back the issue has propogated.
+            Infrastructure seems to be stable, so likely a code issue. 
+            It seems like any customer data was still kept during the time frame, so no data loss.
+        </p>
+        <h3>Alert Customer Support</h3>
+        <p>
+            Every customer was impacted, and all of them experienced an outage for X hours.
+            All customer support has been made aware, and have been told to acknowledge any outage.
+        </p>
+        <h3>Discuss Backup Options</h3>
+        <p>
+            No backup options occur currently, but all code development is to be frozen until the issue is figured out.
+            Both data centers are currently so we have some failover. Rebooting a data center seems to work currently,
+            but the time to spin that up takes X hours.
+        </p>
+        <h3>Find Production Issue</h3>
+        <p>
+            Currently combing through logs trying to find the issue. Still no identifiable cause.
+        </p>
+        
+        <h2 id="Action Items">Action Items</h2>
+        <p>
+            <ul>
+                <li>Alert all customers</li>
+                <li>Prepare draft of official communication of outage.</li>
+                <li>Follow outage/downtime billing guidelines</li>
+                <li>Continue searching for root cause</li>
+            </ul>
+        </p>
+
+        <h2 id="TLDR">TLDR</h2>
+        <p>
+            <details>
+                <summary>What happened?</summary>
+                Production Outage on both
+            </details>
+            <details>
+                <summary>Customer Impact</summary>
+                Entire service down, all customers impacted
+            </details>
+            <details>
+                <summary>Ideas on the Issue</summary>
+                No idea, currently looking through logs / trying to get an understanding
+            </details>
+        </p>
+
+    <h1>Media</h1>
+    Some video:<br>
+    <video width="768" height="480" controls>
+        <source src="media/draymond.mp4" type="video/mp4">
+    </video><br>
+    Some audio:<br>
+    <audio controls>
+        <source src="media/draymond.mp4" type="audio/mp4">
+    </audio>
+
+    <h1>FORM THINGS</h1>
+    <section>
+        <fieldset>        
+            <form>
+            <legend>My Form:</legend>
+            <textarea>Enter some information here</textarea><br>
+            <input type="submit"><br>
+            <input type="checkbox"> A checkbox <br>
+            <input type="radio"> A radio <br>
+            <input type="text"> Enter some text <br>
+            <input type="date"> Enter a date <br>
+            <input list="options"> Pick an options <br>
+            <datalist id = "options">
+                <option> Option 1</option>
+                <option> Option 2</option>
+            </datalist>
+            <select id="selects">
+                <option value="Select 1">Select 1</option>
+                <option value="Select 2">Select 2</option>
+            </select> Select something <br>
+            <input type="button"> Here's a button
+          </form></fieldset>
+    </section>
+    </main>
+    <footer>
+        <p>
+            This meeting is <b>COMPANY CONFIDENTIAL</b>. 
+            Do not share any of this information with the customer unless
+            communication is looked over by Engineering <b>and</b> Customer Success
+        </p>
+    </footer>
+  </body>
+</html>
