@@ -11,8 +11,8 @@
           <ul>
             <li><a href="#Agenda">Agenda</a></li>
             <li><a href="#Attendance">Attendance</a></li>
-            <li><a href="Meeting Minutes">Meeting Minutes</a></li>
-            <li><a href="#Action Items">Action Items</a></li>
+            <li><a href="Meeting_Minutes">Meeting Minutes</a></li>
+            <li><a href="#Action_Items">Action Items</a></li>
             <li><a href="#TLDR">TLDR</a></li>
           </ul>
         </nav>
@@ -21,15 +21,16 @@
         <h1>Emergency Meeting for P1 Issue</h1>
         <hr>
         <section>
-            <p>Motivation: Production has gone down <em>twice</em> today,
+            <span>
+                Motivation: Production has gone down <em>twice</em> today,
                 for a total outage time of 20/24 hours. This is absolutely a <b>P1</b> issue and should be treated as such.
                 <br>
                 There is <i>no</i> current idea or idea as to what the cause may be, or the resolution.
                 <br>
                 <b>Production is currently UP, but may not be stable.</b>
                 <br>
-                <img src="https://imgs.xkcd.com/comics/server_problem_2x.png" width="400">
-            </p>
+            </span>
+            <img src="https://imgs.xkcd.com/comics/server_problem_2x.png" width="400" alt="xkcd">
         </section>
         <section>
             <h2 id="Agenda">Agenda</h2>
@@ -46,7 +47,6 @@
         <section>
             <h2 id="Attendance">Attendance</h2>
             <h3>Executives</h3>
-            <span>
             <ul>
                 <li>Garrett</li>
                 <li>Kieran</li>
@@ -69,12 +69,12 @@
                 <li>Neal</li>
                 <li>Garrett</li>
             </ul>
-        </span>
+
 
         </section>
 
 
-        <h2 id="Meeting Minutes">Meeting Minutes</h2>
+        <h2 id="Meeting_Minutes">Meeting Minutes</h2>
         <h3>What we Know so far</h3>
         <p>
             On TIME:DAY, we had a brief outage in production, and we automatically failed over to our second data center.
@@ -106,18 +106,14 @@
             Currently combing through logs trying to find the issue. Still no identifiable cause.
         </p>
         
-        <h2 id="Action Items">Action Items</h2>
-        <p>
-            <ul>
-                <li>Alert all customers</li>
-                <li>Prepare draft of official communication of outage.</li>
-                <li>Follow outage/downtime billing guidelines</li>
-                <li>Continue searching for root cause</li>
-            </ul>
-        </p>
-
+        <h2 id="Action_Items">Action Items</h2>
+                <ul>
+                    <li>Alert all customers</li>
+                    <li>Prepare draft of official communication of outage.</li>
+                    <li>Follow outage/downtime billing guidelines</li>
+                    <li>Continue searching for root cause</li>
+                </ul>
         <h2 id="TLDR">TLDR</h2>
-        <p>
             <details>
                 <summary>What happened?</summary>
                 Production Outage on both
@@ -130,7 +126,6 @@
                 <summary>Ideas on the Issue</summary>
                 No idea, currently looking through logs / trying to get an understanding
             </details>
-        </p>
 
     <h1>Media</h1>
     Some video:<br>
@@ -145,8 +140,8 @@
     <h1>FORM THINGS</h1>
     <section>
         <fieldset>        
-            <form>
             <legend>My Form:</legend>
+            <form>
             <textarea>Enter some information here</textarea><br>
             <input type="submit"><br>
             <input type="checkbox"> A checkbox <br>
@@ -162,7 +157,7 @@
                 <option value="Select 1">Select 1</option>
                 <option value="Select 2">Select 2</option>
             </select> Select something <br>
-            <input type="button"> Here's a button
+            <input type="button" value="Button"> Here's a button
           </form></fieldset>
     </section>
     </main>
