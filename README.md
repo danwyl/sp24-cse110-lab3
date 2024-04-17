@@ -1,3 +1,2 @@
-# Lab 2 - Starter
-Link to Page:
-[https://danwyl.github.io/cse110-lab2/](https://danwyl.github.io/cse110-lab2/)
+# Lab 3
+danwyl.github.io/sp24-cse110-lab3
