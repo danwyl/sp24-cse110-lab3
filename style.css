@@ -1,0 +1,88 @@
+:root {
+    --my-fave-color: cornflowerblue;
+}
+
+body {
+    /* here's a comment */
+    background-color: color-mix(in lch, #FFFFFF, pink 25%);
+}
+
+@media screen and (orientation: landscape)  {
+    body {
+        background-color: lavender;
+    }
+}
+h1 {
+    color: rgb(30,10,70);
+    text-align: center;
+    background-image: url(media/dead.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    text-decoration-line: underline;
+    position: relative;
+  }
+p {
+    color: hsl(30, 20%, 40%);
+}
+h2 {
+    color: color(display-p3 1 0.5 0);
+}
+h3 {
+    background-color: var(--my-fave-color,blue);
+    margin:auto;
+    padding: 10px 10px 10px 10px;
+}
+.box1 {
+    height : 200px;
+    width: pagewidth;
+    max-width: fit-content;
+    min-width: 10cm;
+    border-radius: .5em;
+    border-color: aquamarine;
+    border-width: .04cm;
+    border-style: dashed;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    margin-left: .1em;
+    margin-right: .1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: sticky;
+}
+.box1:active{
+    display:inline-block;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.flex-item{
+    width: fit-content;
+    height: 50px;
+    margin:10px;
+    background-color: pink;
+}
+.flex-item:hover{
+    display: none;
+}
+
+.grid-maker {
+    display:grid;
+    gap: 10px;
+    grid-area: auto;
+    grid-column: auto;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-item {
+    background-color: bisque;
+    padding:20px;
+    text-align: center;
+}
+.grid-item:hover {
+    background-color: fuchsia;
+}
