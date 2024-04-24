@@ -1,0 +1,25 @@
+:root {
+    --my-fave-color: cornflowerblue;
+}
+
+body {
+    /* here's a comment */
+    background-color: color-mix(in lch, #FFFFFF, pink 25%);
+}
+h1 {
+    color: rgb(30,10,70);
+    text-align: center;
+    background-image: url(media/dead.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    text-decoration-line: underline;
+  }
+p {
+    color: hsl(30, 20%, 40%);
+}
+h2 {
+    color: color(display-p3 1 0.5 0);
+}
+h3 {
+    background-color: var(--my-fave-color,blue);
+}
