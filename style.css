@@ -7,11 +7,13 @@ body {
     background-color: color-mix(in lch, #FFFFFF, pink 25%);
 }
 
+
 @media screen and (orientation: landscape)  {
     body {
         background-color: lavender;
     }
 }
+
 h1 {
     color: rgb(30,10,70);
     text-align: center;
@@ -86,3 +88,6 @@ h3 {
 .grid-item:hover {
     background-color: fuchsia;
 }
+
+
+
